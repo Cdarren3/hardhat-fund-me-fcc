@@ -4,13 +4,13 @@ const { verify } = require("../utils/verify")
 require("dotenv").config()
 
 module.exports = async ({ getNamedAccounts, deployments }) => {
-    const { deploy, log } = deployments
+    const { deploy, log } = deployments //means the variables are extracted from some other module
     const { deployer } = await getNamedAccounts()
     const chainId = network.config.chainId
 
     let ethUsdPriceFeedAddress
     if (chainId == 31337) {
-        const ethUsdAggregator = await deployments.get("MockV3Aggregator")
+        const ethUsdAggregator = await deployments.get("MockV3Aggregator") 
         ethUsdPriceFeedAddress = ethUsdAggregator.address
     } else {
         ethUsdPriceFeedAddress = networkConfig[chainId]["ethUsdPriceFeed"]

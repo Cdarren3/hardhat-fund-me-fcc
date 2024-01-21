@@ -9,7 +9,7 @@ import "./PriceConverter.sol";
 error FundMe__NotOwner();
 
 /**@title A sample Funding Contract
- * @author Patrick Collins
+ * @author Darren
  * @notice This contract is for creating a sample funding contract
  * @dev This implements price feeds as our library
  */
@@ -24,7 +24,7 @@ contract FundMe {
     mapping(address => uint256) private s_addressToAmountFunded;
     AggregatorV3Interface private s_priceFeed;
 
-    // Events (we have none!)
+    // Events (we have none)
 
     // Modifiers
     modifier onlyOwner() {
@@ -47,6 +47,7 @@ contract FundMe {
         s_priceFeed = AggregatorV3Interface(priceFeed);
         i_owner = msg.sender;
     }
+
 
     /// @notice Funds our contract based on the ETH/USD price
     function fund() public payable {

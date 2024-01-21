@@ -1,12 +1,11 @@
 # Hardhat Fund Me
 
-*This repo has been updated to work with Sepolia Testnet over Goerli.*
-
-This is a section of the Javascript Blockchain/Smart Contract FreeCodeCamp Course.
+This mini repo is derived from Patrick Collins' smart contract course on FCC, big credits to him
 
 *[⌨️ (10:00:48) Lesson 7: Hardhat Fund Me](https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=36048s)*
 
 [Full Repo](https://github.com/smartcontractkit/full-blockchain-solidity-course-js)
+
 
 - [Hardhat Fund Me](#hardhat-fund-me)
 - [Getting Started](#getting-started)
@@ -45,6 +44,14 @@ This project is apart of the Hardhat FreeCodeCamp video.
 ## Quickstart
 
 ```
+git clone https://github.com/Cdarren3/hardhat-fund-me-fcc
+cd hardhat-fund-me-fcc
+yarn
+```
+
+or
+
+```
 git clone https://github.com/PatrickAlphaC/hardhat-fund-me-fcc
 cd hardhat-fund-me-fcc
 yarn
@@ -61,6 +68,10 @@ git checkout typescript
 ### Optional Gitpod
 
 If you can't or don't want to run and install locally, you can work with this repo in Gitpod. If you do this, you can skip the `clone this repo` part.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/Cdarren3/hardhat-fund-me-fcc)
+
+or
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/PatrickAlphaC/hardhat-fund-me-fcc)
 
@@ -130,7 +141,7 @@ And you'll see and output file called `gas-report.txt`
 
 ### Estimate gas cost in USD
 
-To get a USD estimation of gas cost, you'll need a `COINMARKETCAP_API_KEY` environment variable. You can get one for free from [CoinMarketCap](https://pro.coinmarketcap.com/signup). 
+To get a USD estimation of gas cost, you could use the free API from [CoinMarketCap](https://pro.coinmarketcap.com/signup), you'll then need the `COINMARKETCAP_API_KEY` environment variable.
 
 Then, uncomment the line `coinmarketcap: COINMARKETCAP_API_KEY,` in `hardhat.config.js` to get the USD estimation. Just note, everytime you run your tests it will use an API call, so it might make sense to have using coinmarketcap disabled until you need it. You can disable it by just commenting the line back out. 
 
@@ -168,12 +179,3 @@ yarn format
 
 
 # Thank you!
-
-If you appreciated this, feel free to follow me or donate!
-
-ETH/Polygon/Avalanche/etc Address: 0x9680201d9c93d65a3603d2088d125e955c73BD65
-
-[![Patrick Collins Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/PatrickAlphaC)
-[![Patrick Collins YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCn-3f8tw_E1jZvhuHatROwA)
-[![Patrick Collins Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/patrickalphac/)
-[![Patrick Collins Medium](https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@patrick.collins_58673/)
